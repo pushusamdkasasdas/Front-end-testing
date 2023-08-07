@@ -82,7 +82,27 @@
 import gsap from "gsap";
 export default {
   mounted() {
-    // gsap.to(".background", { duration: 1, x: 800, delay: 2 });
+    gsap.to(".first_card", {
+      duration: 1,
+      y: -800,
+      duration: 5,
+      repeat: -1,
+      delay: 1,
+    });
+    gsap.to(".second_card", {
+      duration: 1,
+      y: -800,
+      duration: 5,
+      repeat: -1,
+      delay: 1,
+    });
+    gsap.to(".third_card", {
+      duration: 1,
+      y: -800,
+      duration: 5,
+      repeat: -1,
+      delay: 1,
+    });
   },
 };
 </script>
@@ -150,7 +170,7 @@ a {
   .first_card {
     position: absolute;
     left: 965px;
-    top: -224px;
+    top: 68px;
     width: 800px;
     height: 460px;
     border-radius: 18px;
@@ -224,7 +244,7 @@ a {
   .second_card {
     position: absolute;
     left: 965px;
-    top: 296px;
+    top: 588px;
     width: 800px;
     height: 460px;
     opacity: 1;
@@ -294,14 +314,12 @@ a {
           margin: 80px 29px 86px 28px;
         }
       }
-      .center_right {
-      }
     }
   }
   .third_card {
     position: absolute;
     left: 965px;
-    top: 816px;
+    top: 1108px;
     width: 800px;
     height: 460px;
     opacity: 1;
@@ -379,6 +397,7 @@ a {
     width: 996px;
     height: 168px;
     background: linear-gradient(
+      to top,
       rgba(255, 255, 255, 1) 0%,
       rgba(255, 255, 255, 0) 100%
     );
@@ -389,6 +408,7 @@ a {
     top: 0px;
     width: 996px;
     height: 168px;
+
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
